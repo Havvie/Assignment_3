@@ -1,0 +1,154 @@
+.email-count {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.message-toolbar img {
+    display: block;
+    margin: 0 auto 4px;
+}
+
+.inbox-count {
+    width: 25x !important;
+    height: 25px !important;
+    object-fit: contain;
+    display: inline-block !important;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.header-black {
+    background: linear-gradient(#1e1b1b, #222);
+    color: white !important;
+    text-shadow: none !important;
+    border-bottom: none;
+    overflow: visible;
+    font-size: 18px;
+
+}
+.ui-li-icon {
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain;
+    display: inline-block !important;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+.ui-li-listview > li > a {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.ui-listview > li > a strong {
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.listview {
+    margin: 80px;
+}
+
+.ui-li-count {
+    border-radius: 15px;
+}
+
+.ui-content {
+    padding-bottom: 80px !important;
+}
+
+.footer-btn {
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: #f3f3f3;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    background: linear-gradient(#fff, #ddd);
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.account-icon {
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle;
+    margin-right: 6px;
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.edit-btn {
+    vertical-align: right;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.bobs-account {
+    width: 25x !important;
+    height: 25px !important;
+    object-fit: contain;
+    display: inline-block !important;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.subheader {
+    display: inline-bloc
+}
+
+.ui-btn-right {
+    width: 23px;
+    height: 23px;
+}
+
+.compose-icon {
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle;
+    margin-right: 6px;
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.subheader-link:hover {
+    color: #007aff;
+}
+
+li.ui.btn-active a,
+li.ui-btn-active a h2,
+li.ui-btn-active a p,
+li.ui-btn-active a span {
+    color: #007aff !important;
+}
+
+.paperclip3 {
+    background-color: #7d7b7b; 
+    color: white;
+    padding: 3px 8px;
+    border-radius: 34px;
+    font-size: 12px;
+    line-height: 1;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+}

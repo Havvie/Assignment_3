@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JQ Mail</title>
+
+        <!-- jQuery and jQuery Mobile -->
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <!-- Page 1: Account List -->
+        <div data-role="page" id="accounts">
+
+            <!-- Header -->
+            <div data-role="header" class="header-black" data-position="fixed">
+                <h1 style="margin: -8px 10px; display: inline-block;">jQ Mail <span class="email-count">42</span></h1>
+                <a href="#" class="ui-btn-right" data-icon="gear" data-iconpos="notext" title="Settings"></a>
+                <a href="#" class="ui-btn-right" data-icon="search" data-iconpos="notext" title="Search" style="margin-right:45px;"></a>
+                <a href="#" class="ui-btn-right" data-icon="refresh" data-iconpos="notext" title="Refresh" style="margin-right:90px"></a>
+            </div>
+
+            <!-- Content -->
+            <div data-role="content">
+                <ul data-role="listview">
+                    <li><a href="#"><img src="https://img.icons8.com/?size=100&id=124218&format=png&color=000000" class="ui-li-icon"><strong>Home e-mail</strong><span class="ui-li-count" >12</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/?size=100&id=124218&format=png&color=000000" class="ui-li-icon"><strong>Family Gmail</strong><span class="ui-li-count">7</span></a></li>
+                    <li><a href="#folders" data-transition="flow"><img src="https://img.icons8.com/?size=100&id=124218&format=png&color=000000" class="ui-li-icon"><strong>Bob's work account</strong><span class="ui-li-count">23</span></a></li>
+                </ul>
+            </div>
+
+        <!-- Footer -->
+        <div class="footer-container" data-role="footer" data-position="fixed">
+            <a href="#" style="padding: 6px 18px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid"><img src="https://img.icons8.com/?size=100&id=nkplpFWWQEKZ&format=png&color=000000" class="account-icon">Account</a>
+            <a href="#" style="padding: 6px 15px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid" class="edit-btn">Edit...</a>
+        </div>
+        </div>
+
+    
+
+        <!-- Page 2: Folder List -->
+        <div data-role="page" id="folders">
+            
+            <!-- Header -->
+            <div data-role="header" class="header-black" data-position="fixed">
+                <h1 style="margin: -8px 10px; display: inline-block;"> <a href="#accounts" data-transition="flow" style="text-decoration: none; color: white;">jQ Mail <span class="email-count">42</span></h1></a>
+                <a href="#" class="ui-btn-right" data-icon="gear" data-iconpos="notext" title="Settings"></a>
+                <a href="#" class="ui-btn-right" data-icon="search" data-iconpos="notext" title="Search" style="margin-right:45px;"></a>
+                <a href="#" class="ui-btn-right" data-icon="refresh" data-iconpos="notext" title="Refresh" style="margin-right:90px"></a>
+            </div>
+            </a>
+
+            <!-- Subheader: Bob's Work Account -->
+             <div div data-role="header" class="subheader" data-position="static">
+                <span>
+                    <img src="https://img.icons8.com/?size=100&id=124218&format=png&color=000000" class="bobs-account"> Bob's work account
+                </span>
+                <img src="https://img.icons8.com/?size=100&id=26138&format=png&color=228BE6" class="ui-btn-right" style="width: 20px;height: 20px;">
+             </div>
+
+            
+             <!-- Content -->
+             <div data-role="content">
+                <ul data-role="listview">
+                    <li><a href="#inbox" data-transition="flow"><img src="https://img.icons8.com/ios/24/inbox.png" class="ui-li-icon">Inbox <span class="ui-li-count">12</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios/24/edit-file.png" class="ui-li-icon"> Drafts <span class="ui-li-count">3</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios/24/sent.png" class="ui-li-icon"> Sent <span class="ui-li-count">45</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios/24/delete-forever.png" class="ui-li-icon"> Trash <span class="ui-li-count">45</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios/24/spam.png" class="ui-li-icon"> Junk <span class="ui-li-count">8</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios/24/folder-invoices--v1.png" class="ui-li-icon"> My Folder <span class="ui-li-count">1</span></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios/24/folder-invoices--v2.png" class="ui-li-icon"> Personal Folder <span class="ui-li-count">3</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-container" data-role="footer" data-position="fixed">
+                <a href="#" style="padding: 6px 18px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid"><img src="https://img.icons8.com/fluency/24/add-folder.png" class="account-icon">Folder</a>
+                <a href="#" style="padding: 6px 18px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid" class="edit-btn">Edit...</a>
+            </div>
+            </div>
+
+        <!-- Page 3: Inbox -->
+        <div data-role="page" id="inbox">
+
+            <!-- Header -->
+            <div data-role="header" class="header-black" data-position="fixed">
+                <h1 style="margin: -8px 10px; display: inline-block;"><a href="#accounts" data-transition="flow" style="text-decoration: none; color: white;">jQ Mail <span class="email-count">42</span></h1></a>
+                <a href="#" class="ui-btn-right" data-icon="gear" data-iconpos="notext" title="Settings"></a>
+                <a href="#" class="ui-btn-right" data-icon="search" data-iconpos="notext" title="Search" style="margin-right:45px;"></a>
+                <a href="#" class="ui-btn-right" data-icon="refresh" data-iconpos="notext" title="Refresh" style="margin-right:90px"></a>
+            </div>
+
+            <!-- Subheader: Bob's Work Account -->
+            <a href="#folders" data-transition="flow" style="text-decoration: none; color: black;">
+            <div style="background: #f2f2f2; padding: 8px 10px; border-bottom: 1px solid #ccc; position: relative;">
+                <img src="https://img.icons8.com/?size=100&id=124218&format=png&color=000000" style="width: 20px; vertical-align: middle; margin-right: 6px;"> 
+                <strong>Bob's work account</strong>
+                <img src="https://img.icons8.com/?size=100&id=26138&format=png&color=228BE6" style="float: right; width: 20px;">
+                <div style="position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid #ccc;"></div>
+             </div>
+             </a>
+
+            <!-- Subheader: Inbox-->
+            <div style="background: #f2f2f2; padding: 8px 10px; border-bottom: 1px solid #ccc; position: relative;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+
+                <!-- Left side: inbox icon and label -->
+                 <div style="display: flex; align-items: center;">
+                    <img src="https://img.icons8.com/ios/24/inbox.png" style="width: 20px; margin-right: 6px;" />
+                    <strong>Inbox</strong>
+                </div>
+
+                <!-- Right side: 12 count + arrow -->
+                <div style="display: flex; align-items: center;">
+                    <span style="background: linear-gradient(to bottom, #bcbcbc, #929292);
+                                 color: white;
+                                 padding: 2px 10px;
+                                 border-radius: 12px;
+                                 font-size: 13px;
+                                 margin-right: 8px;">
+                        12
+                    </span>
+                    <img src="https://img.icons8.com/?size=100&id=26138&format=png&color=228BE6" style="width: 20px;">
+                </div>
+                </div>
+                
+                <!-- Triangle -->
+                <div style="position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid #ccc;">
+             </div>
+             </div>
+
+             <!-- Content -->
+            <div data-role="content">
+                <ul data-role="listview" data-insert="false">
+                    
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+
+                    <!-- Third message with attachment -->
+                    <li><a href="#message" class="subheader-link" data-transition="flow" data-direction="reverse">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count"><img src="https://img.icons8.com/ios/16/attach.png" style="height: 18px" alt="attachment"> 6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    <li><a href="#">
+                        <h2>Message title</h2>
+                        <p>This secondary line of text runs full width...</p>
+                        <span class="ui-li-count">6:24 PM</span>
+                    </a></li>
+                    </ul>
+            </div> 
+
+        <!-- Footer -->
+        <div class="footer-container" data-role="footer" data-position="fixed">
+            <a href="#" style="padding: 6px 18px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid;"><img src="https://img.icons8.com/?size=100&id=pxslmILpuhj7&format=png&color=228BE6" class="compose-icon">Compose</a>
+            <a href="#" style="padding: 6px 18px; font-weight: bold; font-size: 12px; border-radius: 20px; vertical-align: right; margin-right: 20px; border: 1px solid #aaa; background: linear-gradient(#fff, #ddd);">
+                Sort: Date <span style="font-size: 14px">▾</span>
+            </a>
+        </div>
+        </div>
+        
+        <!-- Page 4: Message Detail -->
+        <div data-role="page" id="message">
+
+        <!-- Header -->
+        <div data-role="header" class="header-black" data-position="fixed">
+            <a href="#inbox" data-transition="flow" style="padding: 6px 10px; background: #666; border-radius: 15px; color: white;">
+            <span style="color: white;">Inbox (12)</span>
+            </a>
+        <h1></h1>
+        <div style="position: absolute; right: 10px; top: 12px; font-size: 14px; color: white;">
+            <span style="font-size: 15px;">3 of 12</span>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/chevron-left.png" style="border-radius: 50%; background: #666; padding: 1px; margin-left: 1x;" /></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/chevron-right.png" style="border-radius: 50%; background: #666; padding: 1px; margin-left: 1px;" /></a>
+        </div>
+        </div>
+  
+        <!-- Message Header Section -->
+        <div style="background: #f1f1f1; padding: 10px 15px; border-bottom: 1px solid #ccc;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2 style="margin: 0;">Message title</h2>
+         
+        <!-- Attachment icon and count-->
+         <span style="padding: 3px 10px; border-radius: 15px; font-size: 14px; display: flex; align-items: center;">
+            <img src="https://img.icons8.com/ios/16/attach.png" style="margin-right: 5px; height: 20px;" />
+            <span class="paperclip3">
+                         3
+         </span>
+         </span>
+        </div>
+        <p style="color: rgb(43, 42, 42); font-size: 14px; margin: 0;">
+            <strong>July 16, 2010</strong> 6:24 PM
+        </p>
+        </div>
+  
+        <!-- From Line -->
+        <div style="background: #f1f1f1; padding: 10px 15px; border-bottom: 1px solid #ccc;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong>From:</strong>
+            <div style="flex-grow: 1; margin-left: 8px;">
+            <span style="padding: 4px 10px; background: #dfdcdc; border-radius: 12px; border: 1px solid #ccc;"><strong>Nancy Walsh</strong></span>
+        </div>
+            <span style="color: gray;">Details 
+            <img src="https://img.icons8.com/ios/14/000000/chevron-right.png"/>
+            </span>
+        </div>
+        </div>
+  
+        <!-- Body -->
+        <div style="padding: 15px;">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>It was popularised in the 1960s with the...</p>
+        </div>
+  
+        <!-- Footer Toolbar -->
+        <div class="message-toolbar" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+            <ul>
+                <li><a href="#"><img src="https://img.icons8.com/ios/24/reply-arrow.png"/><br></a></li>
+                <li><a href="#"><img src="https://img.icons8.com/ios/24/archive-folder.png"/><br></a></li>
+                <li><a href="#deletePopup" data-rel="popup" data-position-to="window" data-transition="pop" data-role="button"><img src="https://img.icons8.com/ios/24/trash--v1.png"/><br></a></li>
+            </ul>
+            </div>
+            </div>
+            
+            <!-- Page 5: Delete Confirmation -->
+           <div data-role="popup" id="deletePopup" data-theme="a" data-overlay-theme="b" data-dismissible="false" class="ui-corner-all" style="max-width: 300px; padding: 20px; text-align: center; font-size: 12px; border-radius: 20px; border: 1px solid">
+            <h3 style="margin-top: 0;">Delete This Message?</h3>
+            <p>Once deleted, a message can be recovered from the Trash.</p>
+            <a href="#inbox" style="padding: 6px 10px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid" data-role="button" data-theme="b" data-rel="back" style="margin-top: 10px;"> Delete Message</a>
+            <a href="#" style="padding: 6px 10px; font-weight: bold; font-size: 12px; border-radius: 20px; border: 1px solid" data-role="button" data-theme="a" data-rel="back">Cancel</a>
+       </div> 
+        </div>
+
+    </body>
+</html>
+
+<a href="#" class="ui-btn-right" data-icon="gear" data-iconpos="notext" title="Settings"></a>
+                <a href="#" class="ui-btn-right" data-icon="search" data-iconpos="notext" title="Search" style="margin-right:45px;"></a>
+                <a href="#" class="ui-btn-right" data-icon="refresh" data-iconpos="notext" title="Refresh" style="margin-right:90px"></a>
